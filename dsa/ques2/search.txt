@@ -1,0 +1,40 @@
+Big O Notation:
+Definition: Big O notation describes the upper bound of an algorithm's running time as a function of input size (n). It helps us compare algorithms based on their efficiency and scalability.
+
+Purpose: It abstracts away hardware differences and focuses on algorithm performance growth.
+
+Best, Average, and Worst Case in Search Operations:
+Case	Linear Search	Binary Search (on sorted data)
+Best	
+O(1) – match at start	
+O(1) – match at middle
+Average	
+O(n/2) → O(n)	
+O(log n)
+Worst	
+O(n) – not found	
+O(log n)
+Time Complexity:
+Algorithm	Time Complexity	Sorted Required?	Extra Space
+Linear Search	O(n)	❌ No	O(1)
+Binary Search	O(log n)	✅ Yes	O(1)
+
+Which to Choose?
+Linear Search:
+
+Pros: No sorting needed, simple.
+
+Cons: Slower for large datasets.
+
+Best when: data is small or unsorted.
+
+Binary Search:
+
+Pros: Much faster on large, sorted datasets.
+
+Cons: Requires data to be sorted.
+
+Best when: platform has frequent search queries and data is maintained in sorted form (e.g., via database indexing or during insertion).
+
+
+
